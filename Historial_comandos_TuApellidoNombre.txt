@@ -1,0 +1,55 @@
+pwd
+sudo apt update
+sudo apt install git -y
+git --version
+ssh-keygen
+cat $HOME/.ssh/*pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:vitodanielsilva-ui/TP_AySO.git
+cd TP_AySO
+pwd
+cat /etc/passwd
+man grep
+grep UBUNTU /etc/passwd
+grep ubuntu /etc/passwd
+grep -i Ubuntu /etc/passwd
+grep -i ubuntu /etc/passwd | awk -F ':' '{print $2}' > datos_usuario.txt
+cat datos_usuario.txt
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+cat datos_usuario.txt
+git config --global user.email "vitodanielsilva@gmail.com"
+git config --global user.name "vitodanielsilva-ui"
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+grep "model name" /proc/cpuinfo | head -n1 > info_pc.txt
+cat info_pc.txt
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+grep -v "nologin" /etc/passwd | head -n10 | sort -t ":" -k7 > lista_ordenada.txt
+cat lista_ordenada.txt
+git add .
+git commit -m "ADD: Listado de usuarios ordenada"
+cat >> README.md << EOF
+Alumno: Vito Daniel Silva
+División: 116
+Turno: Mañana
+EOF
+
+cat README.md
+git add .
+git commit -m "docs: actualización README"
+mkdir -p TP1/arquitectura/Clase{1..5} TP1/so/Clase{1..6}
+tree
+sudo apt install tree -y
+tree
+nano script_dir.sh
+chmod +x script_dir.sh
+./script_dir.sh
+ls
+git add .
+git commit -m "ADD: Añadiendo script"
+history -a
