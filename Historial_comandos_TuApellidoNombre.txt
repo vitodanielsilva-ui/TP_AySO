@@ -18,7 +18,7 @@ grep -i Ubuntu /etc/passwd
 grep -i ubuntu /etc/passwd | awk -F ':' '{print $2}' > datos_usuario.txt
 cat datos_usuario.txt
 whoami
-echo "Usuario=$(whoami)" >> datos_usuario.txt
+echo "Usuario=$(vagrant)" >> datos_usuario.txt
 cat datos_usuario.txt
 git config --global user.email "vitodanielsilva@gmail.com"
 git config --global user.name "vitodanielsilva-ui"
