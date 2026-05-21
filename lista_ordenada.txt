@@ -1,0 +1,6 @@
+root:x:0:0:root:/root:/bin/bash
+vagrant:x:1000:1000::/home/vagrant:/bin/bash
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+sync:x:4:65534:sync:/bin:/bin/sync
